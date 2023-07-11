@@ -1,0 +1,15 @@
+rest:
+  host: 0.0.0.0
+  port: 8000
+
+database:
+  dsn: "host=localhost port=5432 user=root password=secret dbname=densys sslmode=disable statement_cache_mode=describe"
+
+pgxpool:
+  max_conn_lifetime: 3600 # seconds
+  max_conn_idle_time: 1800 # seconds
+  min_conns: 0
+  max_conns: 2
+
+token:
+  symmetric_key: "98W<r5BDF<+tZ9KM:J8E$LqdnHx-=Tse"
